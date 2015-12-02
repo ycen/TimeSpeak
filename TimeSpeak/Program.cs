@@ -23,11 +23,7 @@ namespace TimeSpeak
             string line = "";
             line = objReader.ReadLine();
             line = line.Replace("\"abstract\"","\"abstra\"");
-            //Console.WriteLine(line);
             dynamic stories = JsonConvert.DeserializeObject<Rootobject>(line);
-            //int nlist = stories.results.length;
-            //string abs = stories.results[0].abstra;
-            //Console.WriteLine(abs);
             using (SpeechSynthesizer synth = new SpeechSynthesizer())
             {
 
