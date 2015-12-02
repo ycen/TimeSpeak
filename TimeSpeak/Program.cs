@@ -13,7 +13,7 @@ namespace TimeSpeak
         static void Main(string[] args)
         {
             string sURL;
-            sURL = "http://api.nytimes.com/svc/topstories/v1/world.json?api-key=e40918abbccbb231b9558826929ef1a6:6:69444533";
+            sURL = "http://api.nytimes.com/svc/topstories/v1/yourAPIKey";
             WebRequest wrGETURL;
             wrGETURL = WebRequest.Create(sURL);
             wrGETURL.Proxy = WebProxy.GetDefaultProxy();
